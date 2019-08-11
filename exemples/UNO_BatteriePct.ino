@@ -21,7 +21,7 @@ void setup(){
 	Serial.flush();
 		
 	for(int V = 1050;V < 1300; V += 25){
-	Serial.print(F("Batterie Pb:")),Serial.print(V/100.0, 2),Serial.print("V, "),Serial.print(BattPBpct(V)),Serial.println("%");
+	Serial.print(F("Batterie Pb:")),Serial.print(V/100.0, 2),Serial.print("V, "),Serial.print(BattPBpct(V,6)),Serial.println("%");
 	}
 	
 	for(int V = 3200;V < 4225; V += 25){
